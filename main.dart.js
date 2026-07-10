@@ -7457,9 +7457,7 @@ uh:function uh(a,b){this.c=a
 this.a=b},
 DU:function DU(a){var _=this
 _.d=a
-_.e=0.05
-_.f=0.1
-_.c=_.a=_.r=null},
+_.c=_.a=_.r=_.f=_.e=null},
 ak9:function ak9(a,b){this.a=a
 this.b=b},
 ak2:function ak2(a){this.a=a},
@@ -39563,22 +39561,18 @@ l=g.Hz(g.pa(r,k.r.d.h(0,r).b),h,r,k.r.x)
 if(l!=null){k.v2(l)
 k.aj()
 return j}return"No se pudo vender."}return"El broker recomienda ESPERAR por ahora."},
-a9_(a,b,c,d){var s,r,q,p,o,n,m=this,l=m.r.d.h(0,m.x).b,k=a===B.ao
-if(k){s=l*(1-c)
-r=l*(1+d)}else{s=l*(1+c)
-r=l*(1-d)}q=m.a
-p=q.r
-p===$&&A.a()
-o=p.kl()
-n=q.r.TR(b,l,a,s,m.x,r,m.r.x)
-q=n.a
-if(q!=null){m.as.n(0,q.a,o)
-if(k)A.zG(660,0.09)
+a9_(a,b,c,d){var s,r,q=this,p=q.r.d.h(0,q.x).b,o=a===B.ao,n=q.a,m=n.r
+m===$&&A.a()
+s=m.kl()
+r=n.r.TR(b,p,a,null,q.x,null,q.r.x)
+n=r.a
+if(n!=null){q.as.n(0,n.a,s)
+if(o)A.zG(660,0.09)
 else A.zG(440,0.09)
-k=k?"\ud83d\udfe2 Compra":"\ud83d\udd34 Venta"
-m.mu(k+" "+m.x+" @ "+A.F2(l))
-m.aj()
-return null}return n.b},
+o=o?"\ud83d\udfe2 Compra":"\ud83d\udd34 Venta"
+q.mu(o+" "+q.x+" @ "+A.F2(p))
+q.aj()
+return null}return r.b},
 QL(a){var s,r,q,p,o,n=this,m=n.a,l=m.r
 l===$&&A.a()
 l=A.hP(l.r,t.C9)
@@ -39695,7 +39689,7 @@ B.b.kt(r,0,a)
 s=r.length
 if(s>40)B.b.Up(r,40,s)},
 a0l(){var s,r,q,p,o=this
-o.a9_(B.ao,0.25,0.05,0.12)
+o.a9_(B.ao,0.25,null,null)
 for(s=o.a,r=0;r<10;++r){q=s.r
 q===$&&A.a()
 q.G9(o.r.yC())}q=s.r
