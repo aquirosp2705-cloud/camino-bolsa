@@ -40118,7 +40118,7 @@ A.ahn.prototype={
 $2(a,b){var s=null,r=this.b[b],q=this.a,p=r.b,o=q.c.r.d.h(0,p).b,n=r.yO(o),m=r.ani(o),l=n>=0,k=l?B.aU:B.aT,j=r.c===B.ag,i=j?B.Db:B.CW,h=A.f3(4),g=j?"LARGO":"CORTO"
 i=A.ef(s,A.bd(g,s,s,s,A.cJ(s,s,j?B.aU:B.aT,s,s,s,s,s,s,s,s,10,s,s,B.U,s,s,!0,s,s,s,s,s,s,s,s),s,s),B.t,s,new A.cD(i,s,s,h,s,s,B.ak),s,s,B.EW,s)
 h=t.p
-p=A.dv(A.es(A.c([A.bd(p,s,s,s,B.SQ,s,s),A.bd("@ "+A.F4(r.e),s,s,s,B.lq,s,s)],h),B.aB,B.R),1)
+p=A.dv(A.es(A.c([A.bd(p,s,s,s,B.SQ,s,s),A.bd("Compraste a $"+A.F4(r.e),s,s,s,B.lq,s,s)],h),B.aB,B.R),1)
 l=l?"+":""
 return A.dS(A.c([i,B.dS,p,A.es(A.c([A.bd(l+A.h4(n),s,s,s,A.cJ(s,s,k,s,s,s,s,s,s,s,s,13,s,s,B.U,s,s,!0,s,s,s,s,s,s,s,s),s,s),A.bd(A.aww(m),s,s,s,A.cJ(s,s,k,s,s,s,s,s,s,s,s,11,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s,s)],h),B.dm,B.R),B.yR,A.qJ(B.aN,s,B.nQ,s,s,new A.ahm(q,r),s,s,"Cerrar",B.lC)],h),B.S,B.a2,B.R,0)},
 $S:313}
