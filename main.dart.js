@@ -351,7 +351,7 @@ atM(a){var s,r,q=a.graphemeLayoutBounds,p=B.b.f3(q,t.i)
 q=p.a
 s=J.bo(q)
 r=p.$ti.y[1]
-return new A.l9(new A.o(r.a(s.h(q,0)),r.a(s.h(q,1)),r.a(s.h(q,2)),r.a(s.h(q,3))),new A.bc(J.ay(a.graphemeClusterTextRange.start),J.ay(a.graphemeClusterTextRange.end)),B.kk[J.ay(a.dir.value)])},
+return new A.l9(new A.o(r.a(s.h(q,0)),r.a(s.h(q,1)),r.a(s.h(q,2)),r.a(s.h(q,3))),new A.bc(J.ay(a.graphemeClusterTextRange.start),J.ay(a.graphemeClusterTextRange.end)),B.kl[J.ay(a.dir.value)])},
 aJt(a){var s,r="chromium/canvaskit.js"
 switch(a.a){case 0:s=A.c([],t.s)
 if(A.awg())s.push(r)
@@ -7333,7 +7333,7 @@ abt:function abt(){},
 abs:function abs(a){this.a=a},
 abu:function abu(a){this.a=a},
 as0(a,b,c,d,e){return new A.wQ(a,d,e,b,c,A.aF(t.N),A.c([],t.s),A.n(t.S,t.i),new A.wS(),$.an())},
-anP(a){var s,r,q,p,o,n=new A.Jy(B.kq)
+anP(a){var s,r,q,p,o,n=new A.Jy(B.kk)
 n.r=A.aoN(0,1e5)
 s=A.ao5(B.c_,A.anC(1,a))
 s.DI(60)
@@ -7342,7 +7342,7 @@ for(q=0;q<38;++q){p=B.c_[q]
 r.n(0,p.a,p.c)}o=A.as0(n,s,B.b.gW(n.oH()).a,a,r)
 o.a0S()
 return o},
-aBZ(a){var s,r,q,p,o,n,m,l,k,j,i,h={},g=A.e2(a.h(0,"stageIndex")),f=B.i.cV(g==null?0:g,0,4),e=B.kq[f],d=A.dt(a.h(0,"engineSeed")),c=A.e2(a.h(0,"engineTick"))
+aBZ(a){var s,r,q,p,o,n,m,l,k,j,i,h={},g=A.e2(a.h(0,"stageIndex")),f=B.i.cV(g==null?0:g,0,4),e=B.kk[f],d=A.dt(a.h(0,"engineSeed")),c=A.e2(a.h(0,"engineTick"))
 if(c==null)c=0
 s=A.ao5(B.c_,A.anC(e.a,d))
 s.DI(c)
@@ -7357,7 +7357,7 @@ o=new A.LM(0,g,A.c([],t.a1),A.c([],t.zo),A.n(p,t.i))
 o.a09(0.005,g,0,e.c,q,r)
 q=A.e2(a.h(0,"attempt"))
 g=q==null?1:q
-n=new A.Jy(B.kq)
+n=new A.Jy(B.kk)
 n.d=B.i.cV(f,0,4)
 n.e=g
 n.r=o
@@ -15585,7 +15585,7 @@ _.dx=$},
 CQ:function CQ(){},
 R5:function R5(){},
 ats(a,b){var s,r,q,p,o,n,m,l,k,j,i,h,g,f
-if(a==null)a=B.km
+if(a==null)a=B.kn
 s=J.bo(a)
 r=s.gF(a)-1
 q=A.bm(0,null,!1,t.LQ)
@@ -15777,7 +15777,7 @@ r.gGj()
 q.sGj(r.gGj())
 r.gGh()
 q.sGh(r.gGh())
-s.kQ(B.km,q)
+s.kQ(B.kn,q)
 s.sb5(b.gb5())
 s.sbF(b.gbF())
 s.fx=b.gaoO()
@@ -25751,7 +25751,7 @@ Ii(a){var s,r,q,p,o,n,m,l=A.c([],t.Lx)
 for(s=a.a,r=J.bo(s),q=a.$ti.y[1],p=0;p<r.gF(s);++p){o=q.a(r.h(s,p))
 n=o.rect
 m=J.ay(o.dir.value)
-l.push(new A.dI(n[0],n[1],n[2],n[3],B.kk[m]))}return l},
+l.push(new A.dI(n[0],n[1],n[2],n[3],B.kl[m]))}return l},
 cA(a){var s,r,q=this.a
 q===$&&A.a()
 s=q.a.getGlyphPositionAtCoordinate(a.a,a.b)
@@ -32251,7 +32251,7 @@ o=A.dt(s.h(0,"textAlignIndex"))
 n=A.dt(s.h(0,"textDirectionIndex"))
 m=A.e2(s.h(0,"fontWeightIndex"))
 l=m!=null?A.apE(m):"normal"
-p=new A.aaW(new A.Z9(A.a0T(s,"fontSize"),l,A.ci(s.h(0,"fontFamily")),B.H1[o],B.kk[n],A.a0T(s,"letterSpacing"),A.a0T(s,"wordSpacing"),A.a0T(s,"lineHeight")))
+p=new A.aaW(new A.Z9(A.a0T(s,"fontSize"),l,A.ci(s.h(0,"fontFamily")),B.H1[o],B.kl[n],A.a0T(s,"letterSpacing"),A.a0T(s,"wordSpacing"),A.a0T(s,"lineHeight")))
 break
 case"TextInput.clearClient":p=B.Cb
 break
@@ -39216,7 +39216,7 @@ this.b.h3()},
 $S:14}
 A.aaE.prototype={}
 A.jp.prototype={
-X6(a0,a1,a2){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c=this,b=B.K8.h(0,c.f),a=c.d*b.b*(1+0.8*a1)/Math.sqrt(6)
+X6(a0,a1,a2){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c=this,b=B.Kb.h(0,c.f),a=c.d*b.b*(1+0.8*a1)/Math.sqrt(6)
 for(s=c.r,r=s.length,q=0,p=0;p<r;++p)q+=s[p].a
 r=b.c
 o=Math.log(c.c)
@@ -39379,7 +39379,7 @@ s.$flags=1
 k.w!==$&&A.aZ()
 k.w=s},
 FF(a){var s=this.e.h(0,a)
-if(s==null)s=B.ko
+if(s==null)s=B.kp
 return A.eo(s,t.V3)},
 yT(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c=this;++c.x
 s=A.c([],t.Qr)
@@ -39413,15 +39413,15 @@ i.toString
 s=this.a.b
 r=1+s
 q=A.n(t.Oz,t.i)
-for(p=1+1.5*s,o=1-0.5*s,n=0;n<5;++n){m=B.kl[n]
+for(p=1+1.5*s,o=1-0.5*s,n=0;n<5;++n){m=B.km[n]
 l=i.h(0,m)
 if(l==null)l=0
 if(m===B.c1||m===B.c2)l*=r
 if(m===B.c4)l*=p
-q.n(0,m,m===B.c5?l*o:l)}for(k=0,n=0;n<5;++n){i=q.h(0,B.kl[n])
+q.n(0,m,m===B.c5?l*o:l)}for(k=0,n=0;n<5;++n){i=q.h(0,B.km[n])
 i.toString
 k+=i}j=this.b.jL()/4294967296*k
-for(n=0;n<5;++n){m=B.kl[n]
+for(n=0;n<5;++n){m=B.km[n]
 i=q.h(0,m)
 i.toString
 j-=i
@@ -39794,7 +39794,7 @@ r=A.n(f,t.Yp)
 for(o=e.$ti.c,n=A.bG(e,e.r,o),m=t.V3,l=n.$ti.c;n.t();){k=n.d
 if(k==null)k=l.a(k)
 j=g.r.e.h(0,k)
-i=A.fJ(j==null?B.ko:j,!1,m)
+i=A.fJ(j==null?B.kp:j,!1,m)
 i.$flags=3
 r.n(0,k,i)}n=A.n(f,t.i)
 for(e=A.bG(e,e.r,o),o=e.$ti.c;e.t();){m=e.d
@@ -39888,7 +39888,7 @@ r.qw(new A.a_I(q),!0)
 for(i=A.bG(q,q.r,A.l(q).c),s=t.V3,p=i.$ti.c,o=j.ax;i.t();){n=i.d
 if(n==null)n=p.a(n)
 m=j.r.e.h(0,n)
-l=A.fJ(m==null?B.ko:m,!1,s)
+l=A.fJ(m==null?B.kp:m,!1,s)
 l.$flags=3
 k=B.me.Qq(l,!0)
 if(k.a===B.de){if(r.E(0,n)){j.as=new A.Wc(n,B.b.Fg(B.c_,new A.a_J(n)).b,B.de,k.b)
@@ -40149,7 +40149,7 @@ n=A.qK(p,p,A.wY(r?B.Fw:B.Fy,B.as,p,34),p,p,n,p,p,q,p)
 r=$.zO
 q=r?"Silenciar":"Activar sonido"
 return A.ej(p,A.dW(A.c([B.FF,B.dS,l,B.yX,m,B.dT,n,A.qK(p,p,A.wY(r?B.FA:B.Fz,B.aN,p,p),p,p,o.gany(),p,p,q,p),A.qK(p,p,B.FG,p,p,this.d,p,p,"Nueva partida",p)],s),B.R,B.a3,B.S,0),B.t,p,B.m9,p,p,B.nh,p)},
-acl(){var s=A.ap(["1x",700,"2x",350,"4x",150],t.N,t.S),r=A.l(s).i("eT<1,2>")
+acl(){var s=A.ap(["1x",700,"2x",350,"4x",150,"8x",70],t.N,t.S),r=A.l(s).i("eT<1,2>")
 r=A.IC(new A.eT(s,r),new A.aku(this),r.i("y.E"),t.iF)
 r=A.Y(r,A.l(r).i("y.E"))
 return A.dW(r,B.R,B.a3,B.bq,0)}}
@@ -61794,7 +61794,7 @@ s.ap=b.bO
 s.cy=b.c
 s.a4=b.c4
 s.a5=b.bz
-s.aaO(a==null?B.km:a)},
+s.aaO(a==null?B.kn:a)},
 Vu(a){return this.kQ(null,a)},
 VZ(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6=this,b7={}
 b7.a=b6.fy
@@ -76897,7 +76897,7 @@ grm(){return A.aK6()},
 a6j(){if(this.x)return
 this.vU()},
 VY(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c=this,b=null,a=c.c
-if(a===-1||c.d===-1||c.b.length===0)return new A.lR(b,b,B.cx,B.kn,c.b.length!==0)
+if(a===-1||c.d===-1||c.b.length===0)return new A.lR(b,b,B.cx,B.ko,c.b.length!==0)
 if(!c.as){a=c.Jo(c.d,a)
 c.d=a
 c.c=c.Jo(c.c,a)}s=c.b[c.d].gq()
@@ -84590,6 +84590,21 @@ B.H8=s([0.2126,0.7152,0.0722],t.n)
 B.Il=s([0.01932141,0.11916382,0.95034478],t.n)
 B.cT=s([B.Hq,B.H8,B.Il],t.zg)
 B.o1=s([0,4,12,1,5,13,3,7,15],t.t)
+B.Oq=new A.cZ([B.ak],t.af)
+B.Yv=s(["Comprar","Vender","Ganancias y p\xe9rdidas","Stop Loss","Take Profit"],t.s)
+B.PQ=new A.m0(1,"Principiante",1e5,2e5,B.Oq)
+B.Oo=new A.cZ([B.ak,B.b9],t.af)
+B.Yx=s(["Tendencias","Volatilidad","Noticias econ\xf3micas"],t.s)
+B.PT=new A.m0(2,"Inversionista",2e5,5e5,B.Oo)
+B.Od=new A.cZ([B.ak,B.b9,B.bx,B.ck,B.cl],t.af)
+B.Ys=s(["An\xe1lisis t\xe9cnico","Velas japonesas","Soportes y resistencias"],t.s)
+B.PU=new A.m0(3,"Trader Profesional",5e5,2e6,B.Od)
+B.yt=new A.cZ([B.ak,B.b9,B.bx,B.ck,B.cl,B.cj,B.dd],t.af)
+B.Yy=s(["Gesti\xf3n del riesgo","Eventos econ\xf3micos","Diversificaci\xf3n internacional"],t.s)
+B.PR=new A.m0(4,"Inversionista Elite",2e6,1e7,B.yt)
+B.Yw=s(["Gesti\xf3n de un portafolio diversificado"],t.s)
+B.PS=new A.m0(5,"Experto en Bolsa",1e7,1e8,B.yt)
+B.kk=s([B.PQ,B.PT,B.PU,B.PR,B.PS],A.ad("x<m0>"))
 B.Xc=new A.ft(0,1)
 B.Xh=new A.ft(0.5,1)
 B.Xk=new A.ft(0.5375,0.75)
@@ -84661,7 +84676,7 @@ B.a_=new A.Aa(0,"upstream")
 B.Hu=s([B.a_,B.j],A.ad("x<Aa>"))
 B.ai=new A.Ae(0,"rtl")
 B.I=new A.Ae(1,"ltr")
-B.kk=s([B.ai,B.I],A.ad("x<Ae>"))
+B.kl=s([B.ai,B.I],A.ad("x<Ae>"))
 B.Cu=new A.n2(0,"auto")
 B.Cv=new A.n2(1,"full")
 B.Cw=new A.n2(2,"chromium")
@@ -84683,14 +84698,14 @@ B.c2=new A.fK(1,"bear")
 B.c3=new A.fK(2,"sideways")
 B.c4=new A.fK(3,"highVol")
 B.c5=new A.fK(4,"lowVol")
-B.kl=s([B.c1,B.c2,B.c3,B.c4,B.c5],A.ad("x<fK>"))
+B.km=s([B.c1,B.c2,B.c3,B.c4,B.c5],A.ad("x<fK>"))
 B.HK=s(["click","scroll"],t.s)
 B.Bo=new A.pN()
 B.hT=new A.Kx(1,"page")
 B.hU=new A.e8(B.ba,B.hT)
 B.HL=s([B.Bo,B.hU],A.ad("x<aI>"))
 B.HU=s([],t.QP)
-B.ko=s([],t.cE)
+B.kp=s([],t.cE)
 B.o8=s([],A.ad("x<aKB>"))
 B.HW=s([],t.D)
 B.HZ=s([],t.fJ)
@@ -84700,9 +84715,9 @@ B.HP=s([],t.tc)
 B.hq=s([],t.jl)
 B.HR=s([],t.wi)
 B.HQ=s([],A.ad("x<at2<@>>"))
-B.kn=s([],t.AO)
+B.ko=s([],t.AO)
 B.HT=s([],t.D1)
-B.km=s([],t.QF)
+B.kn=s([],t.QF)
 B.HX=s([],t.Lx)
 B.I_=s([],t.AS)
 B.Yu=s([],t.p)
@@ -84729,7 +84744,7 @@ B.kJ=new A.fN(6,"scrollLockModifier")
 B.kK=new A.fN(7,"functionModifier")
 B.ue=new A.fN(8,"symbolModifier")
 B.o9=s([B.dC,B.dD,B.dE,B.dF,B.kH,B.kI,B.kJ,B.kK,B.ue],A.ad("x<fN>"))
-B.kp=s([!0,!1],t.HZ)
+B.kq=s([!0,!1],t.HZ)
 B.Im=s(["pointerdown","pointermove","pointerleave","pointerup","pointercancel","touchstart","touchend","touchmove","touchcancel","mousedown","mousemove","mouseleave","mouseup","wheel"],t.s)
 B.ke=new A.ff(100)
 B.Fg=new A.ff(200)
@@ -84754,21 +84769,6 @@ B.MX=new A.a4(0.9594,1.3212)
 B.N0=new A.a4(0.9653,1.3032)
 B.N9=new A.a4(0.9705,1.288)
 B.oa=s([B.N3,B.MW,B.Ne,B.MS,B.MZ,B.MT,B.MV,B.MU,B.N_,B.MQ,B.MX,B.N0,B.N9],A.ad("x<+(E,E)>"))
-B.Oq=new A.cZ([B.ak],t.af)
-B.Yv=s(["Comprar","Vender","Ganancias y p\xe9rdidas","Stop Loss","Take Profit"],t.s)
-B.PS=new A.m0(1,"Principiante",1e5,2e6,B.Oq)
-B.Oo=new A.cZ([B.ak,B.b9],t.af)
-B.Yx=s(["Tendencias","Volatilidad","Noticias econ\xf3micas"],t.s)
-B.PR=new A.m0(2,"Inversionista",2e6,1e7,B.Oo)
-B.Od=new A.cZ([B.ak,B.b9,B.bx,B.ck,B.cl],t.af)
-B.Ys=s(["An\xe1lisis t\xe9cnico","Velas japonesas","Soportes y resistencias"],t.s)
-B.PU=new A.m0(3,"Trader Profesional",1e7,3e7,B.Od)
-B.yt=new A.cZ([B.ak,B.b9,B.bx,B.ck,B.cl,B.cj,B.dd],t.af)
-B.Yy=s(["Gesti\xf3n del riesgo","Eventos econ\xf3micos","Diversificaci\xf3n internacional"],t.s)
-B.PQ=new A.m0(4,"Inversionista Elite",3e7,6e7,B.yt)
-B.Yw=s(["Gesti\xf3n de un portafolio diversificado"],t.s)
-B.PT=new A.m0(5,"Experto en Bolsa",6e7,1e8,B.yt)
-B.kq=s([B.PS,B.PR,B.PU,B.PQ,B.PT],A.ad("x<m0>"))
 B.m=new A.xB(0,"ignored")
 B.aO=new A.e(4294967304)
 B.eL=new A.e(4294967323)
@@ -85309,18 +85309,18 @@ B.KV={Off:0,"5%":1,"10%":2,"15%":3}
 B.K5=new A.bw(B.KV,[null,0.05,0.1,0.15],t.YH)
 B.L3={Off:0,"5%":1,"10%":2,"15%":3,"20%":4,"30%":5}
 B.K6=new A.bw(B.L3,[null,0.05,0.1,0.15,0.2,0.3],t.YH)
-B.Nn=new A.lK(0.0018,1,0.01)
-B.Np=new A.lK(-0.0018,1.05,0.01)
-B.No=new A.lK(0,0.55,0.06)
-B.Nm=new A.lK(0,2.2,0.008)
-B.Nl=new A.lK(0,0.3,0.02)
-B.K8=new A.bu([B.c1,B.Nn,B.c2,B.Np,B.c3,B.No,B.c4,B.Nm,B.c5,B.Nl],A.ad("bu<fK,lK>"))
-B.Ka=new A.bu([B.c1,0.9,B.c2,0.02,B.c3,0.05,B.c4,0.02,B.c5,0.01],t.Vo)
-B.K9=new A.bu([B.c1,0.02,B.c2,0.9,B.c3,0.05,B.c4,0.02,B.c5,0.01],t.Vo)
+B.Np=new A.lK(0.0045,1.2,0.01)
+B.Nl=new A.lK(-0.0045,1.25,0.01)
+B.No=new A.lK(0,0.65,0.06)
+B.Nm=new A.lK(0,2.4,0.008)
+B.Nn=new A.lK(0,0.35,0.02)
+B.Kb=new A.bu([B.c1,B.Np,B.c2,B.Nl,B.c3,B.No,B.c4,B.Nm,B.c5,B.Nn],A.ad("bu<fK,lK>"))
+B.K9=new A.bu([B.c1,0.9,B.c2,0.02,B.c3,0.05,B.c4,0.02,B.c5,0.01],t.Vo)
+B.K8=new A.bu([B.c1,0.02,B.c2,0.9,B.c3,0.05,B.c4,0.02,B.c5,0.01],t.Vo)
 B.Kd=new A.bu([B.c1,0.08,B.c2,0.08,B.c3,0.78,B.c4,0.03,B.c5,0.03],t.Vo)
 B.K7=new A.bu([B.c1,0.1,B.c2,0.1,B.c3,0.15,B.c4,0.62,B.c5,0.03],t.Vo)
-B.Kb=new A.bu([B.c1,0.06,B.c2,0.06,B.c3,0.15,B.c4,0.03,B.c5,0.7],t.Vo)
-B.Kc=new A.bu([B.c1,B.Ka,B.c2,B.K9,B.c3,B.Kd,B.c4,B.K7,B.c5,B.Kb],A.ad("bu<fK,b_<fK,E>>"))
+B.Ka=new A.bu([B.c1,0.06,B.c2,0.06,B.c3,0.15,B.c4,0.03,B.c5,0.7],t.Vo)
+B.Kc=new A.bu([B.c1,B.K9,B.c2,B.K8,B.c3,B.Kd,B.c4,B.K7,B.c5,B.Ka],A.ad("bu<fK,b_<fK,E>>"))
 B.L4={type:0}
 B.Ke=new A.bw(B.L4,["line"],t.li)
 B.br={}
@@ -85399,14 +85399,14 @@ B.Hm=s([B.eN,null,null,B.eU],t.L)
 B.HN=s([B.eO,null,null,B.eW],t.L)
 B.GZ=s([B.cu,B.cu,B.cX,null],t.L)
 B.Ki=new A.bu(["*",B.GO,"+",B.I0,"-",B.Hb,".",B.Hz,"/",B.Ge,"0",B.Ib,"1",B.Ia,"2",B.GT,"3",B.Ik,"4",B.I9,"5",B.GS,"6",B.Gk,"7",B.H2,"8",B.I1,"9",B.I4,"Alt",B.GW,"AltGraph",B.Ic,"ArrowDown",B.Hh,"ArrowLeft",B.Hi,"ArrowRight",B.Hj,"ArrowUp",B.Ij,"Clear",B.I7,"Control",B.GX,"Delete",B.HH,"End",B.Hk,"Enter",B.GR,"Home",B.Hl,"Insert",B.I8,"Meta",B.GY,"PageDown",B.Hm,"PageUp",B.HN,"Shift",B.GZ],A.ad("bu<F,T<e?>>"))
-B.A9=new A.iu(0.0035,0.6)
-B.Ab=new A.iu(0.0025,0.5)
-B.Ad=new A.iu(0.013,1)
-B.A8=new A.iu(0.009,0.8)
-B.Ac=new A.iu(0.0085,0.8)
-B.Aa=new A.iu(0.017,1.2)
-B.Ae=new A.iu(0.042,1.6)
-B.ua=new A.bu([B.cj,B.A9,B.dd,B.Ab,B.ak,B.Ad,B.ck,B.A8,B.cl,B.Ac,B.b9,B.Aa,B.bx,B.Ae],A.ad("bu<ef,iu>"))
+B.Ab=new A.iu(0.0045,0.6)
+B.Ac=new A.iu(0.003,0.5)
+B.Ad=new A.iu(0.017,1)
+B.A9=new A.iu(0.0115,0.8)
+B.A8=new A.iu(0.011,0.8)
+B.Aa=new A.iu(0.022,1.2)
+B.Ae=new A.iu(0.052,1.6)
+B.ua=new A.bu([B.cj,B.Ab,B.dd,B.Ac,B.ak,B.Ad,B.ck,B.A9,B.cl,B.A8,B.b9,B.Aa,B.bx,B.Ae],A.ad("bu<ef,iu>"))
 B.L_={KeyA:0,KeyB:1,KeyC:2,KeyD:3,KeyE:4,KeyF:5,KeyG:6,KeyH:7,KeyI:8,KeyJ:9,KeyK:10,KeyL:11,KeyM:12,KeyN:13,KeyO:14,KeyP:15,KeyQ:16,KeyR:17,KeyS:18,KeyT:19,KeyU:20,KeyV:21,KeyW:22,KeyX:23,KeyY:24,KeyZ:25,Digit1:26,Digit2:27,Digit3:28,Digit4:29,Digit5:30,Digit6:31,Digit7:32,Digit8:33,Digit9:34,Digit0:35,Minus:36,Equal:37,BracketLeft:38,BracketRight:39,Backslash:40,Semicolon:41,Quote:42,Backquote:43,Comma:44,Period:45,Slash:46}
 B.ub=new A.bw(B.L_,["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","1","2","3","4","5","6","7","8","9","0","-","=","[","]","\\",";","'","`",",",".","/"],t.li)
 B.KX={Abort:0,Again:1,AltLeft:2,AltRight:3,ArrowDown:4,ArrowLeft:5,ArrowRight:6,ArrowUp:7,AudioVolumeDown:8,AudioVolumeMute:9,AudioVolumeUp:10,Backquote:11,Backslash:12,Backspace:13,BracketLeft:14,BracketRight:15,BrightnessDown:16,BrightnessUp:17,BrowserBack:18,BrowserFavorites:19,BrowserForward:20,BrowserHome:21,BrowserRefresh:22,BrowserSearch:23,BrowserStop:24,CapsLock:25,Comma:26,ContextMenu:27,ControlLeft:28,ControlRight:29,Convert:30,Copy:31,Cut:32,Delete:33,Digit0:34,Digit1:35,Digit2:36,Digit3:37,Digit4:38,Digit5:39,Digit6:40,Digit7:41,Digit8:42,Digit9:43,DisplayToggleIntExt:44,Eject:45,End:46,Enter:47,Equal:48,Escape:49,Esc:50,F1:51,F10:52,F11:53,F12:54,F13:55,F14:56,F15:57,F16:58,F17:59,F18:60,F19:61,F2:62,F20:63,F21:64,F22:65,F23:66,F24:67,F3:68,F4:69,F5:70,F6:71,F7:72,F8:73,F9:74,Find:75,Fn:76,FnLock:77,GameButton1:78,GameButton10:79,GameButton11:80,GameButton12:81,GameButton13:82,GameButton14:83,GameButton15:84,GameButton16:85,GameButton2:86,GameButton3:87,GameButton4:88,GameButton5:89,GameButton6:90,GameButton7:91,GameButton8:92,GameButton9:93,GameButtonA:94,GameButtonB:95,GameButtonC:96,GameButtonLeft1:97,GameButtonLeft2:98,GameButtonMode:99,GameButtonRight1:100,GameButtonRight2:101,GameButtonSelect:102,GameButtonStart:103,GameButtonThumbLeft:104,GameButtonThumbRight:105,GameButtonX:106,GameButtonY:107,GameButtonZ:108,Help:109,Home:110,Hyper:111,Insert:112,IntlBackslash:113,IntlRo:114,IntlYen:115,KanaMode:116,KeyA:117,KeyB:118,KeyC:119,KeyD:120,KeyE:121,KeyF:122,KeyG:123,KeyH:124,KeyI:125,KeyJ:126,KeyK:127,KeyL:128,KeyM:129,KeyN:130,KeyO:131,KeyP:132,KeyQ:133,KeyR:134,KeyS:135,KeyT:136,KeyU:137,KeyV:138,KeyW:139,KeyX:140,KeyY:141,KeyZ:142,KeyboardLayoutSelect:143,Lang1:144,Lang2:145,Lang3:146,Lang4:147,Lang5:148,LaunchApp1:149,LaunchApp2:150,LaunchAssistant:151,LaunchControlPanel:152,LaunchMail:153,LaunchScreenSaver:154,MailForward:155,MailReply:156,MailSend:157,MediaFastForward:158,MediaPause:159,MediaPlay:160,MediaPlayPause:161,MediaRecord:162,MediaRewind:163,MediaSelect:164,MediaStop:165,MediaTrackNext:166,MediaTrackPrevious:167,MetaLeft:168,MetaRight:169,MicrophoneMuteToggle:170,Minus:171,NonConvert:172,NumLock:173,Numpad0:174,Numpad1:175,Numpad2:176,Numpad3:177,Numpad4:178,Numpad5:179,Numpad6:180,Numpad7:181,Numpad8:182,Numpad9:183,NumpadAdd:184,NumpadBackspace:185,NumpadClear:186,NumpadClearEntry:187,NumpadComma:188,NumpadDecimal:189,NumpadDivide:190,NumpadEnter:191,NumpadEqual:192,NumpadMemoryAdd:193,NumpadMemoryClear:194,NumpadMemoryRecall:195,NumpadMemoryStore:196,NumpadMemorySubtract:197,NumpadMultiply:198,NumpadParenLeft:199,NumpadParenRight:200,NumpadSubtract:201,Open:202,PageDown:203,PageUp:204,Paste:205,Pause:206,Period:207,Power:208,PrintScreen:209,PrivacyScreenToggle:210,Props:211,Quote:212,Resume:213,ScrollLock:214,Select:215,SelectTask:216,Semicolon:217,ShiftLeft:218,ShiftRight:219,ShowAllWindows:220,Slash:221,Sleep:222,Space:223,Super:224,Suspend:225,Tab:226,Turbo:227,Undo:228,WakeUp:229,ZoomToggle:230}
@@ -85914,8 +85914,8 @@ B.kZ=new A.rI(1,"nextLine")
 B.hV=new A.rI(2,"forward")
 B.hW=new A.rI(3,"backward")
 B.cx=new A.zq(2,"none")
-B.ye=new A.lR(null,null,B.cx,B.kn,!0)
-B.yf=new A.lR(null,null,B.cx,B.kn,!1)
+B.ye=new A.lR(null,null,B.cx,B.ko,!0)
+B.yf=new A.lR(null,null,B.cx,B.ko,!1)
 B.x=new A.lS(0,"next")
 B.A=new A.lS(1,"previous")
 B.D=new A.lS(2,"end")
@@ -87145,7 +87145,7 @@ return q})
 r($,"aMM","ay7",()=>{var q=A.ad("~(aR<aI>)")
 return A.ap([B.VD,A.arD(!0),B.Vq,A.arD(!1),B.W_,new A.K9(A.y8(q)),B.VR,new A.IW(A.y8(q)),B.VV,new A.Js(A.y8(q)),B.zx,new A.w6(!1,A.y8(q)),B.lw,A.aEc(),B.VW,new A.Jw(A.y8(q)),B.We,new A.M5(A.y8(q))],t.u,t.od)})
 s($,"aKI","amJ",()=>{var q,p,o,n=t.C,m=A.n(t.Vz,n)
-for(q=A.ad("a2"),p=0;p<2;++p){o=B.kp[p]
+for(q=A.ad("a2"),p=0;p<2;++p){o=B.kq[p]
 m.T(0,A.ap([A.e9(B.aO,!1,!1,!1,o),B.jq,A.e9(B.aO,!1,!0,!1,o),B.jt,A.e9(B.aO,!0,!1,!1,o),B.jr,A.e9(B.aP,!1,!0,!1,o),B.ew,A.e9(B.aP,!0,!1,!1,o),B.js],q,n))}m.n(0,B.yz,B.ev)
 m.n(0,B.i7,B.dt)
 m.n(0,B.i8,B.du)
@@ -87201,7 +87201,7 @@ q.n(0,B.l9,B.h9)
 q.n(0,B.la,B.ha)
 return q})
 s($,"aKO","aq2",()=>{var q,p,o,n=t.C,m=A.n(t.Vz,n)
-for(q=A.ad("a2"),p=0;p<2;++p){o=B.kp[p]
+for(q=A.ad("a2"),p=0;p<2;++p){o=B.kq[p]
 m.T(0,A.ap([A.e9(B.aO,!1,!1,!1,o),B.jq,A.e9(B.aO,!0,!1,!1,o),B.jt,A.e9(B.aO,!1,!1,!0,o),B.jr,A.e9(B.aP,!1,!1,!1,o),B.ev,A.e9(B.aP,!0,!1,!1,o),B.ew,A.e9(B.aP,!1,!1,!0,o),B.js],q,n))}m.n(0,B.i7,B.dt)
 m.n(0,B.i8,B.du)
 m.n(0,B.i9,B.dx)
@@ -87265,7 +87265,7 @@ q.n(0,B.l9,B.h9)
 q.n(0,B.la,B.ha)
 return q})
 s($,"aKP","aq3",()=>{var q,p,o,n=t.C,m=A.n(t.Vz,n)
-for(q=A.ad("a2"),p=0;p<2;++p){o=B.kp[p]
+for(q=A.ad("a2"),p=0;p<2;++p){o=B.kq[p]
 m.T(0,A.ap([A.e9(B.aO,!1,!1,!1,o),B.o,A.e9(B.aP,!1,!1,!1,o),B.o,A.e9(B.aO,!0,!1,!1,o),B.o,A.e9(B.aP,!0,!1,!1,o),B.o,A.e9(B.aO,!1,!0,!1,o),B.o,A.e9(B.aP,!1,!0,!1,o),B.o,A.e9(B.aO,!1,!1,!0,o),B.o,A.e9(B.aP,!1,!1,!0,o),B.o],q,n))}m.T(0,B.u3)
 for(n=$.V8().gbJ().ga1(0);n.t();)m.n(0,n.gM(),B.o)
 m.n(0,B.yv,B.o)
