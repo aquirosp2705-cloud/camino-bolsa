@@ -39227,6 +39227,7 @@ for(k=l,j=k,i=j,h=0,g=0;g<6;++g){f=a0.jL()/4294967296
 r=a0.jL()
 if(f<1e-12)f=1e-12
 e=m+a*(Math.sqrt(-2*Math.log(f))*Math.cos(6.283185307179586*(r/4294967296)))
+if(e<0)e*=0.5
 i*=Math.exp(e)
 if(i>j)j=i
 if(i<k)k=i
@@ -39408,7 +39409,7 @@ m.h(0,l).push(d)}return new A.ID(c.x,f,s)},
 DI(a){var s,r=J.asm(a,t.lw)
 for(s=0;s<a;++s)r[s]=this.yT()
 return r},
-aal(a){var s,r,q,p,o,n,m,l,k,j,i=B.Kc.h(0,a)
+aal(a){var s,r,q,p,o,n,m,l,k,j,i=B.Kd.h(0,a)
 i.toString
 s=this.a.b
 r=1+s
@@ -85316,11 +85317,11 @@ B.Nm=new A.lK(0,2.4,0.008)
 B.Nn=new A.lK(0,0.35,0.02)
 B.Kb=new A.bu([B.c1,B.Np,B.c2,B.Nl,B.c3,B.No,B.c4,B.Nm,B.c5,B.Nn],A.ad("bu<fK,lK>"))
 B.K9=new A.bu([B.c1,0.9,B.c2,0.02,B.c3,0.05,B.c4,0.02,B.c5,0.01],t.Vo)
-B.K8=new A.bu([B.c1,0.02,B.c2,0.9,B.c3,0.05,B.c4,0.02,B.c5,0.01],t.Vo)
-B.Kd=new A.bu([B.c1,0.08,B.c2,0.08,B.c3,0.78,B.c4,0.03,B.c5,0.03],t.Vo)
+B.K8=new A.bu([B.c1,0.13,B.c2,0.8,B.c3,0.05,B.c4,0.01,B.c5,0.01],t.Vo)
+B.Kc=new A.bu([B.c1,0.08,B.c2,0.08,B.c3,0.78,B.c4,0.03,B.c5,0.03],t.Vo)
 B.K7=new A.bu([B.c1,0.1,B.c2,0.1,B.c3,0.15,B.c4,0.62,B.c5,0.03],t.Vo)
 B.Ka=new A.bu([B.c1,0.06,B.c2,0.06,B.c3,0.15,B.c4,0.03,B.c5,0.7],t.Vo)
-B.Kc=new A.bu([B.c1,B.K9,B.c2,B.K8,B.c3,B.Kd,B.c4,B.K7,B.c5,B.Ka],A.ad("bu<fK,b_<fK,E>>"))
+B.Kd=new A.bu([B.c1,B.K9,B.c2,B.K8,B.c3,B.Kc,B.c4,B.K7,B.c5,B.Ka],A.ad("bu<fK,b_<fK,E>>"))
 B.L4={type:0}
 B.Ke=new A.bw(B.L4,["line"],t.li)
 B.br={}
