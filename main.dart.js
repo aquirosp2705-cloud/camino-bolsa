@@ -25763,7 +25763,7 @@ $S:2}
 A.anB.prototype={
 $1(a){var s=A.d2().b
 s=s==null?null:s.canvasKitBaseUrl
-return(s==null?"https://www.gstatic.com/flutter-canvaskit/83675ed27633283e7fc296c8bca22e841224c096/":s)+a},
+return(s==null?"canvaskit/":s)+a},
 $S:87}
 A.H2.prototype={
 Ul(){var s=this.a8P(),r=$.b8.bn().ImageFilter.MakeColorFilter(s,null)

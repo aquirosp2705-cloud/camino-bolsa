@@ -44,5 +44,21 @@
     * https://docs.flutter.dev/platform-integration/web/initialization
   -->
   <script src="flutter_bootstrap.js" async></script>
+
+  <!--
+    Registro del service worker para poder JUGAR SIN INTERNET.
+    Flutter 3.44 ya no registra su service worker (lo dejó obsoleto), así que lo
+    registramos aquí. El archivo flutter_service_worker.js se reemplaza tras la
+    compilación (tools/gen_offline_sw.ps1) por uno que guarda TODA la app.
+  -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js?v=1267464278') /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */.catch(function (e) {
+          console.warn('No se pudo registrar el modo offline:', e);
+        });
+      });
+    }
+  </script>
 </body>
 </html>
