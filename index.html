@@ -52,13 +52,73 @@
     compilación (tools/gen_offline_sw.ps1) por uno que guarda TODA la app.
   -->
   <script>
-    if ('serviceWorker' in navigator) {
+    (function () {
+      if (!('serviceWorker' in navigator)) return;
+
+      function banner(text, color) {
+        var b = document.getElementById('offline-banner');
+        if (!b) {
+          b = document.createElement('div');
+          b.id = 'offline-banner';
+          b.style.cssText = 'position:fixed;top:0;left:0;right:0;z-index:2147483647;' +
+            'padding:14px 16px;text-align:center;color:#fff;' +
+            'font:600 15px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;' +
+            'box-shadow:0 2px 10px rgba(0,0,0,.35);transition:opacity .4s;';
+          document.body.appendChild(b);
+        }
+        b.style.background = color;
+        b.textContent = text;
+        b.style.opacity = '1';
+      }
+      function hideBanner(delay) {
+        setTimeout(function () {
+          var b = document.getElementById('offline-banner');
+          if (b) {
+            b.style.opacity = '0';
+            setTimeout(function () { if (b && b.parentNode) b.parentNode.removeChild(b); }, 500);
+          }
+        }, delay);
+      }
+
+      // ¿Están ya guardados los archivos esenciales para jugar sin internet?
+      async function coreCached() {
+        try {
+          var keys = await caches.keys();
+          for (var i = 0; i < keys.length; i++) {
+            var reqs = await (await caches.open(keys[i])).keys();
+            var urls = reqs.map(function (r) { return r.url; });
+            var hasEngine = urls.some(function (u) { return u.indexOf('canvaskit/canvaskit.wasm') >= 0; });
+            var hasApp = urls.some(function (u) { return u.indexOf('main.dart.js') >= 0; });
+            if (hasEngine && hasApp) return true;
+          }
+        } catch (e) {}
+        return false;
+      }
+
       window.addEventListener('load', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=1267464278') /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */.catch(function (e) {
+        navigator.serviceWorker.register('flutter_service_worker.js?v=365201889') /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */.catch(function (e) {
           console.warn('No se pudo registrar el modo offline:', e);
         });
+
+        coreCached().then(function (already) {
+          if (already) return; // ya estaba guardado: no molestamos
+          banner('⏳ Guardando el juego para jugar sin internet… espera a que salga el aviso verde', '#B8860B');
+          var tries = 0;
+          var timer = setInterval(function () {
+            tries++;
+            coreCached().then(function (ok) {
+              if (ok) {
+                clearInterval(timer);
+                banner('✅ ¡Listo! Ya puedes jugar SIN internet (modo avión)', '#16A34A');
+                hideBanner(8000);
+              } else if (tries > 80) {
+                clearInterval(timer); // conexión muy lenta o cortada
+              }
+            });
+          }, 1500);
+        });
       });
-    }
+    })();
   </script>
 </body>
 </html>
