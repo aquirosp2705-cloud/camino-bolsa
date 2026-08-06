@@ -1,6 +1,6 @@
 // Service worker OFFLINE (generado automaticamente en cada publicacion).
 // Guarda toda la app en el dispositivo para poder jugar SIN internet.
-const BUILD = '20260806185132';
+const BUILD = '20260806185933';
 const CACHE = 'camino-bolsa-' + BUILD;
 const PRECACHE = [
   "./",
@@ -47,8 +47,11 @@ self.addEventListener('activate', (e) => {
   })());
 });
 
-// Estrategia: servir de la cache al instante (rapido y offline) y actualizar en
-// segundo plano cuando hay internet (stale-while-revalidate).
+// Estrategia:
+//  - La PAGINA (navegacion): red primero => si hay internet se ve siempre la
+//    version mas nueva; sin internet, se sirve de la cache.
+//  - Los RECURSOS (js/wasm/fuentes): cache primero => rapidos y disponibles
+//    sin internet; si faltan, se bajan de la red y se guardan.
 self.addEventListener('fetch', (e) => {
   const req = e.request;
   if (req.method !== 'GET') return;
@@ -56,17 +59,24 @@ self.addEventListener('fetch', (e) => {
   if (url.origin !== self.location.origin) return;
   e.respondWith((async () => {
     const cache = await caches.open(CACHE);
-    const cached = await cache.match(req);
-    const net = fetch(req).then((res) => {
-      if (res && res.status === 200) cache.put(req, res.clone());
-      return res;
-    }).catch(() => null);
-    if (cached) { e.waitUntil(net); return cached; }
-    const res = await net;
-    if (res) return res;
     if (req.mode === 'navigate') {
-      return (await cache.match('index.html')) || (await cache.match('./')) || Response.error();
+      try {
+        const net = await fetch(req);
+        if (net && net.status === 200) cache.put(req, net.clone());
+        return net;
+      } catch (err) {
+        return (await cache.match(req)) || (await cache.match('index.html')) ||
+               (await cache.match('./')) || Response.error();
+      }
     }
-    return Response.error();
+    const cached = await cache.match(req);
+    if (cached) return cached;
+    try {
+      const net = await fetch(req);
+      if (net && net.status === 200) cache.put(req, net.clone());
+      return net;
+    } catch (err) {
+      return Response.error();
+    }
   })());
 });

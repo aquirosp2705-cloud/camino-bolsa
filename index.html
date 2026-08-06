@@ -95,14 +95,28 @@
         return false;
       }
 
+      // Cuando entra una versión nueva del modo offline, recarga una vez para
+      // mostrarla (así no se queda pegada en la versión vieja).
+      var refreshing = false;
+      navigator.serviceWorker.addEventListener('controllerchange', function () {
+        if (refreshing) return;
+        refreshing = true;
+        window.location.reload();
+      });
+
       window.addEventListener('load', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=365201889') /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */.catch(function (e) {
+        navigator.serviceWorker.register('flutter_service_worker.js?v=3766341748') /* Flutter's service worker is deprecated and will be removed in a future Flutter release. */.catch(function (e) {
           console.warn('No se pudo registrar el modo offline:', e);
         });
 
         coreCached().then(function (already) {
-          if (already) return; // ya estaba guardado: no molestamos
-          banner('⏳ Guardando el juego para jugar sin internet… espera a que salga el aviso verde', '#B8860B');
+          if (already) {
+            // Ya estaba guardado: confirmamos brevemente.
+            banner('✅ Guardado: ya puedes jugar SIN internet (modo avión)', '#16A34A');
+            hideBanner(5000);
+            return;
+          }
+          banner('⏳ Guardando el juego para jugar sin internet… espera al aviso VERDE', '#B8860B');
           var tries = 0;
           var timer = setInterval(function () {
             tries++;
