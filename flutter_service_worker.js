@@ -1,6 +1,6 @@
 // Service worker OFFLINE (generado automaticamente en cada publicacion).
 // Guarda toda la app en el dispositivo para poder jugar SIN internet.
-const BUILD = '20260806185933';
+const BUILD = '20260806190301';
 const CACHE = 'camino-bolsa-' + BUILD;
 const PRECACHE = [
   "./",
